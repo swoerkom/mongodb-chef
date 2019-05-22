@@ -1,3 +1,3 @@
 # mongodb-chef
 
-##Settings to run and test MongoDB with Chef 
+## Settings to run and test MongoDB with Chef 
