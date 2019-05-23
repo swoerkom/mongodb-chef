@@ -1,35 +1,7 @@
 DEPENDENCIES
-  build-essential (~> 8.2.1)
-  node
+  mongodb
     path: .
     metadata: true
-  nodejs (~> 6.0.0)
-  sc-mongodb (~> 1.2.0)
-  yum (~> 5.1.0)
 
 GRAPH
-  apt (7.1.1)
-  ark (4.0.0)
-    build-essential (>= 0.0.0)
-    seven_zip (>= 0.0.0)
-  build-essential (8.2.1)
-    mingw (>= 1.1)
-    seven_zip (>= 0.0.0)
-  mingw (2.1.0)
-    seven_zip (>= 0.0.0)
-  node (0.1.0)
-    apt (>= 0.0.0)
-    nodejs (~> 6.0.0)
-    sc-mongodb (~> 1.2.0)
-    yum (>= 0.0.0)
-  nodejs (6.0.0)
-    ark (>= 2.0.2)
-    build-essential (>= 5.0)
-  sc-mongodb (1.2.0)
-    apt (>= 1.8.2)
-    build-essential (>= 5.0.0)
-    yum (>= 3.0)
-  seven_zip (3.1.0)
-    windows (>= 0.0.0)
-  windows (6.0.0)
-  yum (5.1.0)
+  mongodb (0.1.0)

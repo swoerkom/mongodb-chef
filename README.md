@@ -1,1 +1,4 @@
-# mongodb-chef
+# mongodb
+
+TODO: Enter the cookbook description here.
+
