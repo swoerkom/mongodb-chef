@@ -1,4 +1,10 @@
 # mongodb-chef
 
-Settings to run and test MongoDB with Chef 
+Settings to setup MongoDB and perform tests. 
+
+Adds MongoDB repository 
+Installs MongoDB 
+Checks if version 8 is installed 
+
+
 
