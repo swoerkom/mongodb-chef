@@ -1,6 +1,6 @@
 # mongodb-chef
 
-Settings to setup MongoDB and perform tests. 
+Settings to install and start MongoDB and perform tests. 
 
 Adds MongoDB repository 
 Installs MongoDB 
