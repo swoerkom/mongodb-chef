@@ -1,0 +1,289 @@
+I, [2019-05-24T11:39:58.463296 #64775]  INFO -- default-ubuntu-1604: -----> Cleaning up any prior instances of <default-ubuntu-1604>
+I, [2019-05-24T11:39:58.464124 #64775]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2019-05-24T11:40:05.065906 #64775]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
+I, [2019-05-24T11:40:06.317456 #64775]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
+I, [2019-05-24T11:40:06.895874 #64775]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Removing hosts
+I, [2019-05-24T11:40:07.017597 #64775]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
+I, [2019-05-24T11:40:07.021663 #64775]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m8.55s).
+I, [2019-05-24T11:40:07.023634 #64775]  INFO -- default-ubuntu-1604: -----> Testing <default-ubuntu-1604>
+I, [2019-05-24T11:40:07.023887 #64775]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
+I, [2019-05-24T11:40:09.703049 #64775]  INFO -- default-ubuntu-1604: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2019-05-24T11:40:09.945365 #64775]  INFO -- default-ubuntu-1604: ==> default: Importing base box 'bento/ubuntu-16.04'...
+I, [2019-05-24T11:40:22.167375 #64775]  INFO -- default-ubuntu-1604: [KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2019-05-24T11:40:22.363754 #64775]  INFO -- default-ubuntu-1604: ==> default: Checking if box 'bento/ubuntu-16.04' version '201812.27.0' is up to date...
+I, [2019-05-24T11:40:23.306061 #64775]  INFO -- default-ubuntu-1604: ==> default: Setting the name of the VM: kitchen-mongodb-default-ubuntu-1604
+I, [2019-05-24T11:40:24.126374 #64775]  INFO -- default-ubuntu-1604: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2019-05-24T11:40:24.653511 #64775]  INFO -- default-ubuntu-1604: ==> default: Clearing any previously set network interfaces...
+I, [2019-05-24T11:40:24.731848 #64775]  INFO -- default-ubuntu-1604: ==> default: Preparing network interfaces based on configuration...
+I, [2019-05-24T11:40:24.733280 #64775]  INFO -- default-ubuntu-1604:     default: Adapter 1: nat
+I, [2019-05-24T11:40:24.818662 #64775]  INFO -- default-ubuntu-1604: ==> default: Forwarding ports...
+I, [2019-05-24T11:40:24.962255 #64775]  INFO -- default-ubuntu-1604:     default: 22 (guest) => 2200 (host) (adapter 1)
+I, [2019-05-24T11:40:25.234912 #64775]  INFO -- default-ubuntu-1604: ==> default: Booting VM...
+I, [2019-05-24T11:40:25.659502 #64775]  INFO -- default-ubuntu-1604: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2019-05-24T11:40:26.596558 #64775]  INFO -- default-ubuntu-1604:     default: SSH address: 127.0.0.1:2200
+I, [2019-05-24T11:40:26.596971 #64775]  INFO -- default-ubuntu-1604:     default: SSH username: vagrant
+I, [2019-05-24T11:40:26.597510 #64775]  INFO -- default-ubuntu-1604:     default: SSH auth method: private key
+I, [2019-05-24T11:40:43.531014 #64775]  INFO -- default-ubuntu-1604:     default: 
+I, [2019-05-24T11:40:43.531129 #64775]  INFO -- default-ubuntu-1604:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2019-05-24T11:40:43.531196 #64775]  INFO -- default-ubuntu-1604:     default: this with a newly generated keypair for better security.
+I, [2019-05-24T11:40:45.260804 #64775]  INFO -- default-ubuntu-1604:     default: 
+I, [2019-05-24T11:40:45.260898 #64775]  INFO -- default-ubuntu-1604:     default: Inserting generated public key within guest...
+I, [2019-05-24T11:40:45.552345 #64775]  INFO -- default-ubuntu-1604:     default: Removing insecure key from the guest if it's present...
+I, [2019-05-24T11:40:45.927377 #64775]  INFO -- default-ubuntu-1604:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2019-05-24T11:40:47.752110 #64775]  INFO -- default-ubuntu-1604: ==> default: Machine booted and ready!
+I, [2019-05-24T11:40:47.755233 #64775]  INFO -- default-ubuntu-1604: ==> default: Checking for guest additions in VM...
+I, [2019-05-24T11:40:47.854104 #64775]  INFO -- default-ubuntu-1604:     default: The guest additions on this VM do not match the installed version of
+I, [2019-05-24T11:40:47.854232 #64775]  INFO -- default-ubuntu-1604:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2019-05-24T11:40:47.854317 #64775]  INFO -- default-ubuntu-1604:     default: prevent things such as shared folders from working properly. If you see
+I, [2019-05-24T11:40:47.854390 #64775]  INFO -- default-ubuntu-1604:     default: shared folder errors, please make sure the guest additions within the
+I, [2019-05-24T11:40:47.854448 #64775]  INFO -- default-ubuntu-1604:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2019-05-24T11:40:47.854496 #64775]  INFO -- default-ubuntu-1604:     default: your host and reload your VM.
+I, [2019-05-24T11:40:47.854551 #64775]  INFO -- default-ubuntu-1604:     default: 
+I, [2019-05-24T11:40:47.854605 #64775]  INFO -- default-ubuntu-1604:     default: Guest Additions Version: 5.2.22
+I, [2019-05-24T11:40:47.854645 #64775]  INFO -- default-ubuntu-1604:     default: VirtualBox Version: 6.0
+I, [2019-05-24T11:40:47.858590 #64775]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Checking for host entries
+I, [2019-05-24T11:40:47.861709 #64775]  INFO -- default-ubuntu-1604: ==> default: Setting hostname...
+I, [2019-05-24T11:40:53.602827 #64775]  INFO -- default-ubuntu-1604: ==> default: Mounting shared folders...
+I, [2019-05-24T11:40:53.606284 #64775]  INFO -- default-ubuntu-1604:     default: /tmp/omnibus/cache => /Users/tech-a06/.kitchen/cache
+I, [2019-05-24T11:40:54.183782 #64775]  INFO -- default-ubuntu-1604: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2019-05-24T11:40:59.630613 #64775]  INFO -- default-ubuntu-1604: [SSH] Established
+I, [2019-05-24T11:40:59.633035 #64775]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> created.
+I, [2019-05-24T11:40:59.634293 #64775]  INFO -- default-ubuntu-1604: Finished creating <default-ubuntu-1604> (0m52.61s).
+I, [2019-05-24T11:40:59.636015 #64775]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
+I, [2019-05-24T11:40:59.637867 #64775]  INFO -- default-ubuntu-1604: Preparing files for transfer
+I, [2019-05-24T11:40:59.638059 #64775]  INFO -- default-ubuntu-1604: Preparing dna.json
+I, [2019-05-24T11:40:59.638645 #64775]  INFO -- default-ubuntu-1604: Resolving cookbook dependencies with Berkshelf 7.0.6...
+I, [2019-05-24T11:41:04.695764 #64775]  INFO -- default-ubuntu-1604: Removing non-cookbook files before transfer
+I, [2019-05-24T11:41:04.708536 #64775]  INFO -- default-ubuntu-1604: Preparing validation.pem
+I, [2019-05-24T11:41:04.714018 #64775]  INFO -- default-ubuntu-1604: Preparing client.rb
+I, [2019-05-24T11:41:04.823039 #64775]  INFO -- default-ubuntu-1604: ubuntu 16.04 x86_64
+I, [2019-05-24T11:41:04.823177 #64775]  INFO -- default-ubuntu-1604: Getting information for chef stable 14.10.9 for ubuntu...
+I, [2019-05-24T11:41:04.823262 #64775]  INFO -- default-ubuntu-1604: downloading https://omnitruck.chef.io/stable/chef/metadata?v=14.10.9&p=ubuntu&pv=16.04&m=x86_64
+I, [2019-05-24T11:41:04.823301 #64775]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh.1760/metadata.txt
+I, [2019-05-24T11:41:04.823845 #64775]  INFO -- default-ubuntu-1604: trying wget...
+I, [2019-05-24T11:41:04.952425 #64775]  INFO -- default-ubuntu-1604: sha1	cf19d6a3c21bef28160a9b6896381c6e160fb640
+I, [2019-05-24T11:41:04.954163 #64775]  INFO -- default-ubuntu-1604: sha256	c41299e167acb143b2328a63a774c3b85cd939d3ee40bc4aedf9f62252fe4ab9
+I, [2019-05-24T11:41:04.955318 #64775]  INFO -- default-ubuntu-1604: url	https://packages.chef.io/files/stable/chef/14.10.9/ubuntu/16.04/chef_14.10.9-1_amd64.deb
+I, [2019-05-24T11:41:04.956560 #64775]  INFO -- default-ubuntu-1604: version	14.10.9
+I, [2019-05-24T11:41:04.959646 #64775]  INFO -- default-ubuntu-1604: downloaded metadata file looks valid...
+I, [2019-05-24T11:41:04.975602 #64775]  INFO -- default-ubuntu-1604: /tmp/omnibus/cache/chef_14.10.9-1_amd64.deb exists
+I, [2019-05-24T11:41:04.975900 #64775]  INFO -- default-ubuntu-1604: Comparing checksum with sha256sum...
+I, [2019-05-24T11:41:05.434680 #64775]  INFO -- default-ubuntu-1604: Installing chef 14.10.9
+I, [2019-05-24T11:41:05.434779 #64775]  INFO -- default-ubuntu-1604: installing with dpkg...
+I, [2019-05-24T11:41:05.559491 #64775]  INFO -- default-ubuntu-1604: Selecting previously unselected package chef.
+I, [2019-05-24T11:41:07.251642 #64775]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38412 files and directories currently installed.)
+I, [2019-05-24T11:41:07.254746 #64775]  INFO -- default-ubuntu-1604: Preparing to unpack .../cache/chef_14.10.9-1_amd64.deb ...
+I, [2019-05-24T11:41:07.261918 #64775]  INFO -- default-ubuntu-1604: Unpacking chef (14.10.9-1) ...
+I, [2019-05-24T11:41:16.347420 #64775]  INFO -- default-ubuntu-1604: Setting up chef (14.10.9-1) ...
+I, [2019-05-24T11:41:16.453525 #64775]  INFO -- default-ubuntu-1604: Thank you for installing Chef!
+I, [2019-05-24T11:41:16.517948 #64775]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
+I, [2019-05-24T11:41:18.245011 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:16+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /tmp/kitchen, /tmp/kitchen
+I, [2019-05-24T11:41:18.245721 #64775]  INFO -- default-ubuntu-1604:   One version per cookbook
+I, [2019-05-24T11:41:18.246143 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:18.254342 #64775]  INFO -- default-ubuntu-1604: Starting Chef Client, version 14.10.9
+I, [2019-05-24T11:41:18.255255 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:16+00:00] INFO: *** Chef 14.10.9 ***
+I, [2019-05-24T11:41:18.256200 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:16+00:00] INFO: Platform: x86_64-linux
+I, [2019-05-24T11:41:18.256810 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:16+00:00] INFO: Chef-client pid: 1839
+I, [2019-05-24T11:41:18.258456 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:16+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+I, [2019-05-24T11:41:20.041226 #64775]  INFO -- default-ubuntu-1604: Creating a new client identity for default-ubuntu-1604 using the validator key.
+I, [2019-05-24T11:41:20.042183 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Client key /tmp/kitchen/client.pem is not present - registering
+I, [2019-05-24T11:41:20.078137 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Setting the run_list to ["recipe[mongodb::default]"] from CLI options
+I, [2019-05-24T11:41:20.089052 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Run List is [recipe[mongodb::default]]
+I, [2019-05-24T11:41:20.089959 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Run List expands to [mongodb::default]
+I, [2019-05-24T11:41:20.090946 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Starting Chef Run for default-ubuntu-1604
+I, [2019-05-24T11:41:20.091692 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Running start handlers
+I, [2019-05-24T11:41:20.092431 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Start handlers complete.
+I, [2019-05-24T11:41:20.095165 #64775]  INFO -- default-ubuntu-1604: resolving cookbooks for run list: ["mongodb::default"]
+I, [2019-05-24T11:41:20.112793 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Loading cookbooks [mongodb@0.1.0]
+I, [2019-05-24T11:41:20.114653 #64775]  INFO -- default-ubuntu-1604: Synchronizing Cookbooks:
+I, [2019-05-24T11:41:20.125505 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Storing updated cookbooks/mongodb/metadata.json in the cache.
+I, [2019-05-24T11:41:20.126143 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Storing updated cookbooks/mongodb/templates/mongod.service.erb in the cache.
+I, [2019-05-24T11:41:20.130480 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Storing updated cookbooks/mongodb/metadata.rb in the cache.
+I, [2019-05-24T11:41:20.133720 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Storing updated cookbooks/mongodb/templates/mongod.conf.erb in the cache.
+I, [2019-05-24T11:41:20.134796 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Storing updated cookbooks/mongodb/README.md in the cache.
+I, [2019-05-24T11:41:20.136538 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:18+00:00] INFO: Storing updated cookbooks/mongodb/recipes/default.rb in the cache.
+I, [2019-05-24T11:41:20.138039 #64775]  INFO -- default-ubuntu-1604:   - mongodb (0.1.0)
+I, [2019-05-24T11:41:20.141093 #64775]  INFO -- default-ubuntu-1604: Installing Cookbook Gems:
+I, [2019-05-24T11:41:20.141436 #64775]  INFO -- default-ubuntu-1604: Compiling Cookbooks...
+I, [2019-05-24T11:41:20.147505 #64775]  INFO -- default-ubuntu-1604: Converging 6 resources
+I, [2019-05-24T11:41:20.148777 #64775]  INFO -- default-ubuntu-1604: Recipe: mongodb::default
+I, [2019-05-24T11:41:20.150824 #64775]  INFO -- default-ubuntu-1604:   * apt_update[update] action update[2019-05-24T10:41:18+00:00] INFO: Processing apt_update[update] action update (mongodb::default line 7)
+I, [2019-05-24T11:41:20.153425 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:20.155786 #64775]  INFO -- default-ubuntu-1604:     - force update new lists of packages
+I, [2019-05-24T11:41:20.158168 #64775]  INFO -- default-ubuntu-1604:     * directory[/var/lib/apt/periodic] action create[2019-05-24T10:41:18+00:00] INFO: Processing directory[/var/lib/apt/periodic] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 60)
+I, [2019-05-24T11:41:20.161203 #64775]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-24T11:41:20.163247 #64775]  INFO -- default-ubuntu-1604:     * directory[/etc/apt/apt.conf.d] action create[2019-05-24T10:41:18+00:00] INFO: Processing directory[/etc/apt/apt.conf.d] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 60)
+I, [2019-05-24T11:41:20.166596 #64775]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-24T11:41:20.168063 #64775]  INFO -- default-ubuntu-1604:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing[2019-05-24T10:41:18+00:00] INFO: Processing file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 65)
+I, [2019-05-24T11:41:20.170583 #64775]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-24T11:41:20.173520 #64775]  INFO -- default-ubuntu-1604:     * execute[apt-get -q update] action run[2019-05-24T10:41:18+00:00] INFO: Processing execute[apt-get -q update] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 70)
+I, [2019-05-24T11:41:20.299490 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:20.300678 #64775]  INFO -- default-ubuntu-1604:       [execute] Hit:1 http://archive.ubuntu.com/ubuntu xenial InRelease
+I, [2019-05-24T11:41:20.304511 #64775]  INFO -- default-ubuntu-1604:          Get:2 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+I, [2019-05-24T11:41:20.326734 #64775]  INFO -- default-ubuntu-1604:          Get:3 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+I, [2019-05-24T11:41:20.442440 #64775]  INFO -- default-ubuntu-1604:          Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+I, [2019-05-24T11:41:20.545445 #64775]  INFO -- default-ubuntu-1604:          Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [957 kB]
+I, [2019-05-24T11:41:20.653100 #64775]  INFO -- default-ubuntu-1604:          Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [824 kB]
+I, [2019-05-24T11:41:20.740733 #64775]  INFO -- default-ubuntu-1604:          Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [381 kB]
+I, [2019-05-24T11:41:20.780221 #64775]  INFO -- default-ubuntu-1604:          Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [7616 B]
+I, [2019-05-24T11:41:20.788866 #64775]  INFO -- default-ubuntu-1604:          Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages [7580 B]
+I, [2019-05-24T11:41:20.794329 #64775]  INFO -- default-ubuntu-1604:          Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en [2272 B]
+I, [2019-05-24T11:41:20.799343 #64775]  INFO -- default-ubuntu-1604:          Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [748 kB]
+I, [2019-05-24T11:41:20.864891 #64775]  INFO -- default-ubuntu-1604:          Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [685 kB]
+I, [2019-05-24T11:41:20.919524 #64775]  INFO -- default-ubuntu-1604:          Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [311 kB]
+I, [2019-05-24T11:41:20.927327 #64775]  INFO -- default-ubuntu-1604:          Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.7 kB]
+I, [2019-05-24T11:41:20.929146 #64775]  INFO -- default-ubuntu-1604:          Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages [15.8 kB]
+I, [2019-05-24T11:41:21.227193 #64775]  INFO -- default-ubuntu-1604:          Get:16 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [647 kB]
+I, [2019-05-24T11:41:21.721748 #64775]  INFO -- default-ubuntu-1604:          Get:17 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages [535 kB]
+I, [2019-05-24T11:41:21.858682 #64775]  INFO -- default-ubuntu-1604:          Get:18 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [264 kB]
+I, [2019-05-24T11:41:21.947276 #64775]  INFO -- default-ubuntu-1604:          Get:19 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [435 kB]
+I, [2019-05-24T11:41:22.117430 #64775]  INFO -- default-ubuntu-1604:          Get:20 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages [378 kB]
+I, [2019-05-24T11:41:22.225322 #64775]  INFO -- default-ubuntu-1604:          Get:21 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [176 kB]
+I, [2019-05-24T11:41:22.252217 #64775]  INFO -- default-ubuntu-1604:          Get:22 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [5600 B]
+I, [2019-05-24T11:41:22.252370 #64775]  INFO -- default-ubuntu-1604:          Get:23 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages [5764 B]
+I, [2019-05-24T11:41:22.254211 #64775]  INFO -- default-ubuntu-1604:          Get:24 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [2676 B]
+I, [2019-05-24T11:41:27.084372 #64775]  INFO -- default-ubuntu-1604:          Fetched 6731 kB in 2s (2951 kB/s)
+I, [2019-05-24T11:41:29.171901 #64775]  INFO -- default-ubuntu-1604:          Reading package lists...
+I, [2019-05-24T11:41:29.308496 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:27+00:00] INFO: execute[apt-get -q update] ran successfully
+I, [2019-05-24T11:41:29.310299 #64775]  INFO -- default-ubuntu-1604:       - execute ["apt-get", "-q", "update"]
+I, [2019-05-24T11:41:29.310661 #64775]  INFO -- default-ubuntu-1604:   
+I, [2019-05-24T11:41:29.312906 #64775]  INFO -- default-ubuntu-1604:   * apt_repository[mongodb-org] action add[2019-05-24T10:41:27+00:00] INFO: Processing apt_repository[mongodb-org] action add (mongodb::default line 11)
+I, [2019-05-24T11:41:29.486414 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:29.488651 #64775]  INFO -- default-ubuntu-1604:     * execute[install-key EA312927] action run[2019-05-24T10:41:27+00:00] INFO: Processing execute[install-key EA312927] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 251)
+I, [2019-05-24T11:41:29.785185 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:29.786087 #64775]  INFO -- default-ubuntu-1604:       [execute] Executing: /tmp/tmp.Dbrlb52ZrQ/gpg.1.sh --no-tty
+I, [2019-05-24T11:41:29.786191 #64775]  INFO -- default-ubuntu-1604:          --recv
+I, [2019-05-24T11:41:29.786248 #64775]  INFO -- default-ubuntu-1604:          --keyserver
+I, [2019-05-24T11:41:29.786301 #64775]  INFO -- default-ubuntu-1604:          hkp://keyserver.ubuntu.com:80
+I, [2019-05-24T11:41:29.786351 #64775]  INFO -- default-ubuntu-1604:          EA312927
+I, [2019-05-24T11:41:29.791739 #64775]  INFO -- default-ubuntu-1604:          gpg: requesting key EA312927 from hkp server keyserver.ubuntu.com
+I, [2019-05-24T11:41:29.820481 #64775]  INFO -- default-ubuntu-1604:          gpg: key EA312927: public key "MongoDB 3.2 Release Signing Key <packaging@mongodb.com>" imported
+I, [2019-05-24T11:41:29.822450 #64775]  INFO -- default-ubuntu-1604:          gpg: key EA312927: public key "Totally Legit Signing Key <mallory@example.org>" imported
+I, [2019-05-24T11:41:29.823664 #64775]  INFO -- default-ubuntu-1604:          gpg: Total number processed: 2
+I, [2019-05-24T11:41:29.826456 #64775]  INFO -- default-ubuntu-1604:          gpg:               imported: 2  (RSA: 2)
+I, [2019-05-24T11:41:29.984996 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:28+00:00] INFO: execute[install-key EA312927] ran successfully
+I, [2019-05-24T11:41:29.986574 #64775]  INFO -- default-ubuntu-1604:       - execute apt-key adv --no-tty --recv --keyserver hkp://keyserver.ubuntu.com:80 EA312927
+I, [2019-05-24T11:41:29.987691 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:28+00:00] INFO: execute[install-key EA312927] sending run action to execute[apt-cache gencaches] (immediate)
+I, [2019-05-24T11:41:29.988094 #64775]  INFO -- default-ubuntu-1604:     * execute[apt-cache gencaches] action run[2019-05-24T10:41:28+00:00] INFO: Processing execute[apt-cache gencaches] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 51)
+I, [2019-05-24T11:41:30.004471 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:30.051552 #64775]  INFO -- default-ubuntu-1604:       [execute] Reading package lists...
+I, [2019-05-24T11:41:30.077633 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:28+00:00] INFO: execute[apt-cache gencaches] ran successfully
+I, [2019-05-24T11:41:30.080586 #64775]  INFO -- default-ubuntu-1604:       - execute ["apt-cache", "gencaches"]
+I, [2019-05-24T11:41:30.080694 #64775]  INFO -- default-ubuntu-1604:     * execute[apt-cache gencaches] action nothing[2019-05-24T10:41:28+00:00] INFO: Processing execute[apt-cache gencaches] action nothing (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 51)
+I, [2019-05-24T11:41:30.080765 #64775]  INFO -- default-ubuntu-1604:  (skipped due to action :nothing)
+I, [2019-05-24T11:41:30.086530 #64775]  INFO -- default-ubuntu-1604:     * apt_update[mongodb-org] action nothing[2019-05-24T10:41:28+00:00] INFO: Processing apt_update[mongodb-org] action nothing (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 58)
+I, [2019-05-24T11:41:30.089300 #64775]  INFO -- default-ubuntu-1604:  (skipped due to action :nothing)
+I, [2019-05-24T11:41:30.094061 #64775]  INFO -- default-ubuntu-1604:     * file[/etc/apt/sources.list.d/mongodb-org.list] action create[2019-05-24T10:41:28+00:00] INFO: Processing file[/etc/apt/sources.list.d/mongodb-org.list] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 74)
+I, [2019-05-24T11:41:30.096433 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:28+00:00] INFO: file[/etc/apt/sources.list.d/mongodb-org.list] created file /etc/apt/sources.list.d/mongodb-org.list
+I, [2019-05-24T11:41:30.097070 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:30.100846 #64775]  INFO -- default-ubuntu-1604:       - create new file /etc/apt/sources.list.d/mongodb-org.list[2019-05-24T10:41:28+00:00] INFO: file[/etc/apt/sources.list.d/mongodb-org.list] updated file contents /etc/apt/sources.list.d/mongodb-org.list
+I, [2019-05-24T11:41:30.101358 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:30.102600 #64775]  INFO -- default-ubuntu-1604:       - update content in file /etc/apt/sources.list.d/mongodb-org.list from none to 974c9d
+I, [2019-05-24T11:41:30.104588 #64775]  INFO -- default-ubuntu-1604:       --- /etc/apt/sources.list.d/mongodb-org.list	2019-05-24 10:41:28.353669479 +0000
+I, [2019-05-24T11:41:30.105221 #64775]  INFO -- default-ubuntu-1604:       +++ /etc/apt/sources.list.d/.chef-mongodb-org20190524-1839-5glzo1.list	2019-05-24 10:41:28.353669479 +0000
+I, [2019-05-24T11:41:30.106192 #64775]  INFO -- default-ubuntu-1604:       @@ -1 +1,2 @@
+I, [2019-05-24T11:41:30.109930 #64775]  INFO -- default-ubuntu-1604:       +deb      "http://repo.mongodb.org/apt/ubuntu" xenial/mongodb-org/3.2 multiverse[2019-05-24T10:41:28+00:00] INFO: file[/etc/apt/sources.list.d/mongodb-org.list] owner changed to 0
+I, [2019-05-24T11:41:30.117990 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:28+00:00] INFO: file[/etc/apt/sources.list.d/mongodb-org.list] group changed to 0
+I, [2019-05-24T11:41:30.119871 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:28+00:00] INFO: file[/etc/apt/sources.list.d/mongodb-org.list] mode changed to 644
+I, [2019-05-24T11:41:30.120319 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:30.121428 #64775]  INFO -- default-ubuntu-1604:       - change mode from '' to '0644'
+I, [2019-05-24T11:41:30.122672 #64775]  INFO -- default-ubuntu-1604:       - change owner from '' to 'root'
+I, [2019-05-24T11:41:30.124823 #64775]  INFO -- default-ubuntu-1604:       - change group from '' to 'root'
+I, [2019-05-24T11:41:30.125927 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:28+00:00] INFO: file[/etc/apt/sources.list.d/mongodb-org.list] sending run action to execute[apt-cache gencaches] (immediate)
+I, [2019-05-24T11:41:30.129011 #64775]  INFO -- default-ubuntu-1604:     * execute[apt-cache gencaches] action run[2019-05-24T10:41:28+00:00] INFO: Processing execute[apt-cache gencaches] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 51)
+I, [2019-05-24T11:41:30.141054 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:32.754164 #64775]  INFO -- default-ubuntu-1604:       [execute] Reading package lists...
+I, [2019-05-24T11:41:32.878868 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:31+00:00] INFO: execute[apt-cache gencaches] ran successfully
+I, [2019-05-24T11:41:32.882470 #64775]  INFO -- default-ubuntu-1604:       - execute ["apt-cache", "gencaches"]
+I, [2019-05-24T11:41:32.893671 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:31+00:00] INFO: file[/etc/apt/sources.list.d/mongodb-org.list] sending update action to apt_update[mongodb-org] (immediate)
+I, [2019-05-24T11:41:32.893764 #64775]  INFO -- default-ubuntu-1604:     * apt_update[mongodb-org] action update[2019-05-24T10:41:31+00:00] INFO: Processing apt_update[mongodb-org] action update (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 58)
+I, [2019-05-24T11:41:32.896444 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:32.898832 #64775]  INFO -- default-ubuntu-1604:       - force update new lists of packages
+I, [2019-05-24T11:41:32.904842 #64775]  INFO -- default-ubuntu-1604:       * directory[/var/lib/apt/periodic] action create[2019-05-24T10:41:31+00:00] INFO: Processing directory[/var/lib/apt/periodic] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 60)
+I, [2019-05-24T11:41:32.914851 #64775]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-24T11:41:32.917913 #64775]  INFO -- default-ubuntu-1604:       * directory[/etc/apt/apt.conf.d] action create[2019-05-24T10:41:31+00:00] INFO: Processing directory[/etc/apt/apt.conf.d] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 60)
+I, [2019-05-24T11:41:32.926624 #64775]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-24T11:41:32.930853 #64775]  INFO -- default-ubuntu-1604:       * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing[2019-05-24T10:41:31+00:00] INFO: Processing file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 65)
+I, [2019-05-24T11:41:32.939297 #64775]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-24T11:41:32.944438 #64775]  INFO -- default-ubuntu-1604:       * execute[apt-get -q update] action run[2019-05-24T10:41:31+00:00] INFO: Processing execute[apt-get -q update] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_update.rb line 70)
+I, [2019-05-24T11:41:33.052932 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:41:33.053839 #64775]  INFO -- default-ubuntu-1604:  [execute] Hit:1 http://security.ubuntu.com/ubuntu xenial-security InRelease
+I, [2019-05-24T11:41:33.055119 #64775]  INFO -- default-ubuntu-1604:            Hit:2 http://archive.ubuntu.com/ubuntu xenial InRelease
+I, [2019-05-24T11:41:33.055202 #64775]  INFO -- default-ubuntu-1604:            Hit:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease
+I, [2019-05-24T11:41:33.056202 #64775]  INFO -- default-ubuntu-1604:            Hit:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
+I, [2019-05-24T11:41:33.073078 #64775]  INFO -- default-ubuntu-1604:            Ign:5 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 InRelease
+I, [2019-05-24T11:41:33.085766 #64775]  INFO -- default-ubuntu-1604:            Get:6 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 Release [3462 B]
+I, [2019-05-24T11:41:33.176124 #64775]  INFO -- default-ubuntu-1604:            Get:7 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 Release.gpg [801 B]
+I, [2019-05-24T11:41:33.705708 #64775]  INFO -- default-ubuntu-1604:            Get:8 http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2/multiverse amd64 Packages [11.2 kB]
+I, [2019-05-24T11:41:33.770431 #64775]  INFO -- default-ubuntu-1604:            Fetched 15.5 kB in 0s (21.7 kB/s)
+I, [2019-05-24T11:41:35.780703 #64775]  INFO -- default-ubuntu-1604:            Reading package lists...
+I, [2019-05-24T11:41:35.862424 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:41:34+00:00] INFO: execute[apt-get -q update] ran successfully
+I, [2019-05-24T11:41:35.863134 #64775]  INFO -- default-ubuntu-1604:  - execute ["apt-get", "-q", "update"]
+I, [2019-05-24T11:41:35.864339 #64775]  INFO -- default-ubuntu-1604:     
+I, [2019-05-24T11:41:35.864450 #64775]  INFO -- default-ubuntu-1604:   
+I, [2019-05-24T11:41:35.866549 #64775]  INFO -- default-ubuntu-1604:   * apt_package[mongodb-org] action upgrade[2019-05-24T10:41:34+00:00] INFO: Processing apt_package[mongodb-org] action upgrade (mongodb::default line 19)
+I, [2019-05-24T11:42:10.744572 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: apt_package[mongodb-org] upgraded(allow_downgrade) mongodb-org to 3.2.22
+I, [2019-05-24T11:42:10.747046 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:42:10.747541 #64775]  INFO -- default-ubuntu-1604:     - upgrade(allow_downgrade) package mongodb-org from uninstalled to 3.2.22
+I, [2019-05-24T11:42:10.749192 #64775]  INFO -- default-ubuntu-1604:   * template[/lib/systemd/system/mongod.service] action create[2019-05-24T10:42:09+00:00] INFO: Processing template[/lib/systemd/system/mongod.service] action create (mongodb::default line 23)
+I, [2019-05-24T11:42:10.757282 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: template[/lib/systemd/system/mongod.service] mode changed to 755
+I, [2019-05-24T11:42:10.757681 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:42:10.759846 #64775]  INFO -- default-ubuntu-1604:     - change mode from '0644' to '0755'
+I, [2019-05-24T11:42:10.761210 #64775]  INFO -- default-ubuntu-1604:   * template[/etc/mongod.conf] action create[2019-05-24T10:42:09+00:00] INFO: Processing template[/etc/mongod.conf] action create (mongodb::default line 33)
+I, [2019-05-24T11:42:10.769787 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: template[/etc/mongod.conf] backed up to /tmp/kitchen/backup/etc/mongod.conf.chef-20190524104209.046784
+I, [2019-05-24T11:42:10.771348 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: template[/etc/mongod.conf] updated file contents /etc/mongod.conf
+I, [2019-05-24T11:42:10.772185 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:42:10.773243 #64775]  INFO -- default-ubuntu-1604:     - update content in file /etc/mongod.conf from 956fef to a4058c
+I, [2019-05-24T11:42:10.774635 #64775]  INFO -- default-ubuntu-1604:     --- /etc/mongod.conf	2018-12-26 08:56:08.000000000 +0000
+I, [2019-05-24T11:42:10.776183 #64775]  INFO -- default-ubuntu-1604:     +++ /etc/.chef-mongod20190524-1839-1e2hr7r.conf	2019-05-24 10:42:09.042003479 +0000
+I, [2019-05-24T11:42:10.777148 #64775]  INFO -- default-ubuntu-1604:     @@ -1,3 +1,4 @@
+I, [2019-05-24T11:42:10.778128 #64775]  INFO -- default-ubuntu-1604:     +
+I, [2019-05-24T11:42:10.783202 #64775]  INFO -- default-ubuntu-1604:      # mongod.conf
+I, [2019-05-24T11:42:10.783303 #64775]  INFO -- default-ubuntu-1604:      
+I, [2019-05-24T11:42:10.790409 #64775]  INFO -- default-ubuntu-1604:      # for documentation of all options, see:
+I, [2019-05-24T11:42:10.790481 #64775]  INFO -- default-ubuntu-1604:     @@ -21,7 +22,7 @@
+I, [2019-05-24T11:42:10.790513 #64775]  INFO -- default-ubuntu-1604:      # network interfaces
+I, [2019-05-24T11:42:10.790542 #64775]  INFO -- default-ubuntu-1604:      net:
+I, [2019-05-24T11:42:10.790593 #64775]  INFO -- default-ubuntu-1604: port: 27017
+I, [2019-05-24T11:42:10.790665 #64775]  INFO -- default-ubuntu-1604:     -  bindIp: 127.0.0.1
+I, [2019-05-24T11:42:10.790722 #64775]  INFO -- default-ubuntu-1604:     +  bindIp: 0.0.0.0
+I, [2019-05-24T11:42:10.790755 #64775]  INFO -- default-ubuntu-1604:      
+I, [2019-05-24T11:42:10.790782 #64775]  INFO -- default-ubuntu-1604:      
+I, [2019-05-24T11:42:10.800174 #64775]  INFO -- default-ubuntu-1604:      #processManagement:[2019-05-24T10:42:09+00:00] INFO: template[/etc/mongod.conf] mode changed to 755
+I, [2019-05-24T11:42:10.800368 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:42:10.800422 #64775]  INFO -- default-ubuntu-1604:     - change mode from '0644' to '0755'
+I, [2019-05-24T11:42:10.800678 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: template[/etc/mongod.conf] not queuing delayed action restart on service[mongod] (delayed), as it's already been queued
+I, [2019-05-24T11:42:10.800720 #64775]  INFO -- default-ubuntu-1604:   * service[mongod] action enable[2019-05-24T10:42:09+00:00] INFO: Processing service[mongod] action enable (mongodb::default line 48)
+I, [2019-05-24T11:42:11.074806 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: service[mongod] enabled
+I, [2019-05-24T11:42:11.074922 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:42:11.074986 #64775]  INFO -- default-ubuntu-1604:     - enable service service[mongod]
+I, [2019-05-24T11:42:11.076920 #64775]  INFO -- default-ubuntu-1604:   * service[mongod] action start[2019-05-24T10:42:09+00:00] INFO: Processing service[mongod] action start (mongodb::default line 48)
+I, [2019-05-24T11:42:11.227055 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: service[mongod] started
+I, [2019-05-24T11:42:11.227166 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:42:11.227208 #64775]  INFO -- default-ubuntu-1604:     - start service service[mongod]
+I, [2019-05-24T11:42:11.227243 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: template[/lib/systemd/system/mongod.service] sending restart action to service[mongod] (delayed)
+I, [2019-05-24T11:42:11.227279 #64775]  INFO -- default-ubuntu-1604:   * service[mongod] action restart[2019-05-24T10:42:09+00:00] INFO: Processing service[mongod] action restart (mongodb::default line 48)
+I, [2019-05-24T11:42:11.366964 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: service[mongod] restarted
+I, [2019-05-24T11:42:11.367052 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:42:11.367096 #64775]  INFO -- default-ubuntu-1604:     - restart service service[mongod]
+I, [2019-05-24T11:42:11.472302 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: Chef Run complete in 51.405840639 seconds
+I, [2019-05-24T11:42:11.474357 #64775]  INFO -- default-ubuntu-1604: 
+I, [2019-05-24T11:42:11.475147 #64775]  INFO -- default-ubuntu-1604: Running handlers:
+I, [2019-05-24T11:42:11.475827 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: Running report handlers
+I, [2019-05-24T11:42:11.477059 #64775]  INFO -- default-ubuntu-1604: Running handlers complete
+I, [2019-05-24T11:42:11.478299 #64775]  INFO -- default-ubuntu-1604: [2019-05-24T10:42:09+00:00] INFO: Report handlers complete
+I, [2019-05-24T11:42:11.479167 #64775]  INFO -- default-ubuntu-1604: Chef Client finished, 15/23 resources updated in 53 seconds
+I, [2019-05-24T11:42:11.497899 #64775]  INFO -- default-ubuntu-1604: Downloading files from <default-ubuntu-1604>
+I, [2019-05-24T11:42:11.503876 #64775]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (1m11.86s).
+I, [2019-05-24T11:42:11.504334 #64775]  INFO -- default-ubuntu-1604: -----> Setting up <default-ubuntu-1604>...
+I, [2019-05-24T11:42:11.505720 #64775]  INFO -- default-ubuntu-1604: Finished setting up <default-ubuntu-1604> (0m0.00s).
+I, [2019-05-24T11:42:11.505983 #64775]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
+I, [2019-05-24T11:42:12.058875 #64775]  INFO -- default-ubuntu-1604: Loaded tests from {:path=>".Users.tech-a06.Documents.engineering-29.DevOps.week2.Sparta-Mongo_cookbook.mongodb.test.integration.default"} 
+I, [2019-05-24T11:42:12.498059 #64775]  INFO -- default-ubuntu-1604: Finished verifying <default-ubuntu-1604> (0m0.99s).
+I, [2019-05-24T11:42:12.500423 #64775]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2019-05-24T11:42:19.370152 #64775]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
+I, [2019-05-24T11:42:20.567127 #64775]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
+I, [2019-05-24T11:42:21.009879 #64775]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Removing hosts
+I, [2019-05-24T11:42:21.094855 #64775]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
+I, [2019-05-24T11:42:21.098653 #64775]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m8.59s).
+I, [2019-05-24T11:42:21.099013 #64775]  INFO -- default-ubuntu-1604: Finished testing <default-ubuntu-1604> (2m22.63s).
